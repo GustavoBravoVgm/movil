@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mni_buscar_articulo"
+        android:title="@string/tituloBuscar"/>
+    <item
+        android:id="@+id/mni_cantidades_acumuladas_x_cliente"
+        android:title="@string/tituloVerVentasPorArticulo"/>
+    <item
+        android:id="@+id/mni_objetivos_venta"
+        android:enabled="true"
+        android:title="@string/mniObjetivos" />
+    <item
+        android:id="@+id/mni_catalogo"
+        android:enabled="true"
+        android:title="@string/mniCatalogo" />
+</menu>

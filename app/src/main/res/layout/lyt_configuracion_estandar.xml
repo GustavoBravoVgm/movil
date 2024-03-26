@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/chkDescargaAutomaticaStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/lblDescargaStockAutomatica" />
+
+    <CheckBox
+        android:id="@+id/chkEnvioAutomaticoVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/lblEnvioVentaAutomatico" />
+    
+    <CheckBox
+        android:id="@+id/chkEnvioAutomaticoRecibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/lblEnvioReciboAutomatico" />
+    
+    <CheckBox
+        android:id="@+id/chkSugerenciaSincronizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/sugerenciaSincronizar" />
+    
+    <CheckBox 
+        android:id="@+id/chkBusquedaPorListaArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/busquedaPorListaArticulo"/>
+
+    <CheckBox
+        android:id="@+id/chkEnvioAutomaticoHojasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/envioAutomaticoHojasDetalle"/>
+
+    <CheckBox
+        android:id="@+id/chkEnvioAutomaticoEgreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/envioAutomaticoEgresos"/>
+
+    <!--CheckBox
+        android:id="@+id/chkEnvioAutomaticoEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/envioAutomaticoEntregas"/-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/lblRepartidor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="15sp"
+                android:text="@string/lblRepartidorDelDia"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"/>
+            
+            <Spinner
+	    		android:id="@+id/cmbRepartidor"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/cdSeleccionarRepartidor"/>
+     </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblSubrubro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSubrubro" />
+
+        <Spinner
+            android:id="@+id/cmbSubrubro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cdIngreseSubrubro"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/lblListas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblListas" />
+
+        <Spinner
+            android:id="@+id/cmbListaPrecio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cdIngreseListaPrecio"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:id="@+id/linearFiltroProveedor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkFiltroProveedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblFiltroProveedor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblFiltroProveedor"
+
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCodigo" />
+
+            <RadioButton
+                android:id="@+id/rbDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblDescripcion" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtBuscar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hIngresoDatos"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+    </LinearLayout>
+
+    <include layout="@layout/lyt_separator" />
+
+    <ListView
+        android:id="@+id/lstListaPrecioDetalle"
+        style="@style/listViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fastScrollEnabled="true" />
+</LinearLayout>

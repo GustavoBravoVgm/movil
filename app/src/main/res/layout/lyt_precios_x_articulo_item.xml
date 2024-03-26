@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/selector_item"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+    
+	<TextView 
+		android:id="@+id/lblDescripcion" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/mnDescripcion"
+		android:textSize="20sp" 
+		android:textStyle="bold"
+		android:maxLines="1"/> 	
+  		
+  		<LinearLayout
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"  				
+  		>
+			<TextView	
+				android:id="@+id/lblPrecioUnitario" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:paddingRight="5dp" android:text="@string/lblPrecioUnitario"/>
+			
+			<TextView	
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="@string/lblCero"
+				android:id="@+id/lblPrecioUnitarioValue" 
+				android:layout_marginRight="10sp"/>		
+	</LinearLayout>
+		<LinearLayout
+	  		android:orientation="horizontal"
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"  				
+	  		>
+			<TextView	
+				android:id="@+id/lblPrecioPorKg" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:paddingRight="5dp" android:text="@string/lblPrecioPorKg"/>
+			
+			<TextView	
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="@string/lblCero"
+				android:id="@+id/lblPrecioPorKgValue" 
+				android:layout_marginRight="10sp"/>		
+		</LinearLayout>
+	
+</LinearLayout>	

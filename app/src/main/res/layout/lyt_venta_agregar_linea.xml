@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            android:minHeight="400dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <include layout="@layout/lyt_agregar_linea_base" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--<TextView
+                    android:id="@+id/lblUnidadPorBulto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblUnidadPorBultoLabel" />
+
+                <TextView
+                    android:id="@+id/lblValueUnidadPorBulto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="@string/lblCero"
+                    android:textSize="18sp" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblUnidadPorBulto"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lblUnidadPorBultoLabelSp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lblValueUnidadPorBulto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblBultos"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblBultosSinPuntos"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtBultos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblUnidades"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblUnidadesSinPuntos"
+                    android:padding="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtUnidades"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblPrecioUnitario"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblPrecioUnitarioSp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPrecioUnitario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblDescuentos"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblDescuentoSp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtDescuentos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblPrecioKilo"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblPrecioKiloSp"
+                    android:padding="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPrecioKilo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblSubtotal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblSubtotalSp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtSubtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblDescuentosProv"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblPorcentajeDescuentoProveedor"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lblPorcentajeDescuentoProveedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblDescuentoCliente"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblPorcentajeDescuentoCliente"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lblPorcentajeDescuentoCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--<TextView
+                            android:id="@+id/lblBultos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lblBultos" />
+
+                        <EditText
+                            android:id="@+id/txtBultos"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hBulto"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:minHeight="48dp"
+                            android:selectAllOnFocus="true"
+                            android:text="@string/lblCero"
+                            tools:ignore="DuplicateSpeakableTextCheck" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- <TextView
+                             android:id="@+id/lblUnidades"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/lblUnidades" />
+
+                         <EditText
+                             android:id="@+id/txtUnidades"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:importantForAutofill="no"
+                             android:inputType="number"
+                             android:minHeight="48dp"
+                             android:selectAllOnFocus="true"
+                             android:text="@string/lblCero" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- <TextView
+                             android:id="@+id/lblPrecioUnitario"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/lblPrecioUnitario" />
+
+                         <EditText
+                             android:id="@+id/txtPrecioUnitario"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:focusable="false"
+                             android:focusableInTouchMode="false"
+                             android:importantForAutofill="no"
+                             android:inputType="none"
+                             android:minHeight="48dp"
+                             android:text="@string/lblCero" />-->
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--<TextView
+                            android:id="@+id/lblDescuentos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lblDescuento" />
+
+                        <EditText
+                            android:id="@+id/txtDescuentos"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp"
+                            android:text="@string/lblCero" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--<TextView
+                            android:id="@+id/lblPrecioKilo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="@string/lblPrecioKilo" />
+
+                        <EditText
+                            android:id="@+id/txtPrecioKilo"
+                            android:layout_width="106dp"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:importantForAutofill="no"
+                            android:inputType="none"
+                            android:minHeight="48dp"
+                            android:text="@string/lblCero" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--<TextView
+                            android:id="@+id/lblSubtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lblSubtotal" />
+
+                        <EditText
+                            android:id="@+id/txtSubtotal"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:importantForAutofill="no"
+                            android:inputType="none"
+                            android:minHeight="48dp"
+                            android:text="@string/lblCero" />-->
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <!--<TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/lblPorcentajeDescuentoProveedor" />
+
+                    <TextView
+                        android:id="@+id/lblPorcentajeDescuentoProveedor"
+                        android:layout_width="wrap_content"
+                        android:text="@string/lblCero" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/lblPorcentajeDescuentoCliente" />
+
+                    <TextView
+                        android:id="@+id/lblPorcentajeDescuentoCliente"
+                        android:layout_width="wrap_content"
+                        android:text="@string/lblCero" />
+                </TableRow>
+            </TableLayout>-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAgregarLinea"
+                    style="@style/btnAceptarNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/btnAceptar" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancelar"
+                    style="@style/btnAceptarNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/btnCancelar" />
+
+                <!--<Button
+                    android:id="@+id/btnAgregarLinea"
+                    style="@style/btnAceptarNew"
+                    android:text="@string/btnAceptar" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    style="@style/btnCancelarNew"
+                    android:text="@string/btnCancelar" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

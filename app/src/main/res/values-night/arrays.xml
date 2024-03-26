@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipoDatoIdEmpresa">
+        <item>Numerico</item>
+        <item>Alfanumerico</item>
+    </string-array>
+</resources>

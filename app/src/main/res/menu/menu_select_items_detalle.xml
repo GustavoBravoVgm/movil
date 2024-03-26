@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mni_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/tituloBorrarLineas" />
+    <item
+        android:id="@+id/mni_select_all"
+        android:icon="@drawable/ic_select_all_unselected"
+        android:title="@string/tituloSeleccionarTodo" />
+
+</menu>

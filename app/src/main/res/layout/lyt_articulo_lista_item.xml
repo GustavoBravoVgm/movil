@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:background="@drawable/selector_item"
+  android:layout_height="wrap_content">
+    
+	<TextView 
+		android:id="@+id/lblDescripcion" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/mnDescripcion"
+		android:textSize="20sp" 
+		android:textStyle="bold"/>
+	<LinearLayout
+		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+  		
+  		<LinearLayout
+  		android:orientation="horizontal"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content">
+			<TextView	
+				android:id="@+id/lblCodigo" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/lblCodigo" android:paddingRight="5dp"/>
+		</LinearLayout>
+  		
+  		<LinearLayout
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:gravity="right">
+			<TextView	
+				android:id="@+id/lblStock" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:text="@string/lblStock" android:paddingRight="5dp"/>
+			
+			<TextView	
+				android:id="@+id/lblStockValue" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="@string/lblCero"/>
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>	

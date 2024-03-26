@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mniSincronizacion"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_buscar"
+        android:title="@string/tituloVerEstadoConexion" />
+    <item
+        android:id="@+id/mniBuscarConexion"
+        android:title="@string/tituloBuscarConexion"
+        android:visible="true" />
+</menu>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/lyt_cabecera_dlgs_entrega" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:padding="10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblProvincia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblProvincia"
+                android:textColor="@color/black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actxtProvincia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:height="48dp"
+                android:hint="@string/hProvincia"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/lblLocalidad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblLocalidad"
+                android:textColor="@color/black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actxtLocalidad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lblLocalidadDescripcion"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/lblBanco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblBancoLabel"
+                android:textColor="@color/black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/acTxtBanco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hBanco"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/lblSucursal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblSucursalLabel"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtSucursal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hSucursal"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/lblCheque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNumeroCheque"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtNumeroCheque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hNumeroCheque"
+                android:inputType="number"
+                android:maxLength="8"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/lblNroCuenta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNumeroCuenta"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtNumeroCuenta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hNumeroCuenta"
+                android:inputType="number"
+                android:maxLength="11"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/lblCuit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCuit"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtCuit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hCuitCheque"
+                android:inputType="number"
+                android:maxLength="11"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/lblFechaVencimiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblFechaVencimientoCheque"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtFechaVencimiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hFechaVencimiento"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/lblTipoCheque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblTipoCheques"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/cmbTipoCheque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cdTipoCheque"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/lblImporte"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblImporte"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true"
+                android:text="@string/lblCero" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAgregarCheque"
+                    style="@style/btnAceptarNew"
+                    android:height="48dp"
+                    android:text="@string/btnAceptar" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    style="@style/btnCancelarNew"
+                    android:height="48dp"
+                    android:text="@string/btnCancelar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

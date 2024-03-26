@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvMsjAutorizacion"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/lblDialogMotivoAutorizacion" />
+    <!--     <TextView  -->
+    <!--         android:id="@+id/tvMotivos" -->
+    <!--         android:layout_width="match_parent" -->
+    <!--         android:layout_height="wrap_content" -->
+    <!--         android:text="Motivo" -->
+    <!--         android:layout_gravity="center_horizontal" -->
+    <!--         /> -->
+    <Spinner
+        android:id="@+id/spMotivos"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/cdMotivoAutorizacion"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etObservacion"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hObservacion"
+        android:importantForAutofill="no"
+        android:minHeight="48dp" />
+</LinearLayout>

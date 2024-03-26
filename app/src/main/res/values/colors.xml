@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#98080c</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#FF8A65</color>
+
+    <!--<color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="action_bar">#98080c</color>
+
+    <color name="grisApagado">#7A6E6E</color>
+    <color name="base_text_color">#000000</color>
+    <color name="base_background_activity_color">#ffffff</color>
+    <color name="base_color_menu_item">#171717</color>
+    <color name="base_color_menu_subitem">#212121</color>
+    <color name="background_gray">#d3d3d3</color>
+    <!--<color name="highlight_item">#2196f3</color>-->
+    <color name="vgm_color">#c01313</color>
+    <color name="base_color">#000000</color>
+    <color name="yellow">#cccc00</color>
+    <color name="highlight_yellow">#fdefcf30</color>
+    <color name="dark_gray">#CCA9A9A9</color>
+    <color name="gray">#A0A0A0</color>
+
+    <color name="green">#32CD32</color>
+    <color name="orange">#FF9900</color>
+    <color name="vgm_color_bordo">#98080c</color>
+
+    <color name="color_verde">#43a847</color>
+    <color name="color_azul">#2196f3</color>
+    <color name="color_amarillo">#fdefcf30</color>
+    <color name="color_naranja">#FF9900</color>
+    <!-- action_bar gris = 373737 -->
+    <!-- action_bar bordo = 6E0D0D -->
+    <!-- bordo vgm 98080c -->
+    <!-- azul buen level 00729f -->
+    <color name="grey_dark">#424242</color>
+
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+
+    <color name="hint">#757575</color>
+</resources>

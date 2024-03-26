@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mni_filtros"
+        android:title="@string/mniFiltros" />
+    <item
+        android:id="@+id/mni_ResumenRecibos"
+        android:title="@string/mniResumenRecibos" />
+</menu>

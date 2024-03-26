@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:padding="5dp"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Layout vertical para el documento -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblTipoDocumento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblTipoDocumento" />
+
+                    <Spinner
+                        android:id="@+id/cmbTipoDocumento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cdIngreseDocumento"
+                        android:minHeight="48dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTurno"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/lblTurno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblTurno" />
+
+                    <Spinner
+                        android:id="@+id/cmbTurno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Layout horizontal para el punto de venta y el numero -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- Layout vertical para el punto de venta -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblPuntoVenta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblPuntoVenta" />
+
+                    <Spinner
+                        android:id="@+id/cmbPuntVenta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cdPuntoVta"
+                        android:minHeight="48dp" />
+
+                </LinearLayout>
+
+                <!-- Layout vertical para el numero de documento -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:id="@+id/lblNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblNumero" />
+
+                    <EditText
+                        android:id="@+id/txtNumero"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hNumeroDoc"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:minHeight="48dp"
+                        android:text="@string/lblNumeroDescripcionEJ" />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/lblNumero"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lblNumeroSp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtNumero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:textColor="@color/base_color_menu_subitem"
+                            android:textColorHint="#757575" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/lblCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCliente" />
+
+            <EditText
+                android:id="@+id/txtCliente"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hDatosDelComercio"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lblCliente"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lblCliente">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/base_color_menu_subitem"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<TextView
+                android:id="@+id/lblCuit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCuit" />
+
+            <EditText
+                android:id="@+id/txtCuit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hCuitCheque"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:minHeight="48dp" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lblCuit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lblCuitSp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCuit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/base_color_menu_subitem"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lblCondicionVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCondicionVenta" />
+
+            <Spinner
+                android:id="@+id/cmbCondicionVenta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cdIngreseCondicionVentaDescripcion"
+                android:minHeight="48dp" />
+
+            <!--<TextView
+                android:id="@+id/lblCondicionAnteIVA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCategoriaFiscalCliente" />
+
+            <EditText
+                android:id="@+id/txtCategoriaFiscal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hCategoriaFiscalDescripcion"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lblCondicionAnteIVA"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lblCategoriaFiscalClienteSp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCategoriaFiscal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/base_color_menu_subitem"
+                    android:textColorHint="#757575" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Layout horizontal para el repartidor y la fechaMovil -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- Layout vertical para la fechaMovil -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:id="@+id/lblFechaVenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblFechaVenta" />
+
+                    <EditText
+                        android:id="@+id/txtFechaVenta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hFechaDeVta"
+                        android:importantForAutofill="no"
+                        android:inputType="date"
+                        android:minHeight="48dp"
+                        android:textColorHint="#757575" />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/lblFechaVenta"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lblFechaVentaSp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtFechaVenta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:textColor="@color/base_color_menu_subitem"
+                            android:textColorHint="#757575" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Layout vertical para el repartidor -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblRepartidor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblRepartidor" />
+
+                    <Spinner
+                        android:id="@+id/cmbRepartidor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cdSeleccionarRepartidor"
+                        android:minHeight="48dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblFechaEntrega"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblFechaEntrega" />
+
+                <EditText
+                    android:id="@+id/txtFechaEntrega"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblCodAcc" />
+
+                <EditText
+                    android:id="@+id/txtCdAutorizacionAcc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hIngreseCodigoAccionComercial"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblCdAutorizacionAcc"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lblCodAcc">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtCdAutorizacionAcc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:id="@+id/lblPie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblPie" />
+
+                <EditText
+                    android:id="@+id/txtPie"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hObservaciones"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLength="249"
+                    android:minHeight="48dp"
+                    android:textColorHint="#757575" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lblPie"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lblPie">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtPie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:textColor="@color/base_color_menu_subitem"
+                        android:textColorHint="#757575" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FF909090" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mni_imprimir_resumen"
+        android:icon="@drawable/ic_attach_money_white"
+        android:title="@string/tituloImprimirResumenCobranza" />
+    <item
+        android:id="@+id/mni_select_all"
+        android:icon="@drawable/ic_select_all_unselected"
+        android:title="@string/tituloSeleccionarTodo" />
+</menu>

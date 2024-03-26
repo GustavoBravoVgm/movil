@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/selector_item"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+    <LinearLayout
+		  	android:orientation="horizontal"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content">
+	  
+		  	<TextView 
+				android:id="@+id/lblBanco" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/lblBancoLabel"
+				android:textStyle="bold"
+				android:textSize="16sp"/>
+			
+			<TextView 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/lblBancoValue" 
+				android:text="@string/lblBancoEjemplo"
+				android:layout_marginLeft="5dp" 
+				android:maxLines="1"/>
+				
+	</LinearLayout>
+	  
+	  <LinearLayout
+		  	android:orientation="horizontal"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content">
+		
+			<TextView 
+			  		android:id="@+id/lblNumeroComprobante" 
+				  	android:layout_width="wrap_content" 
+				  	android:layout_height="fill_parent"
+				  	android:textStyle="bold"
+			  		android:text="@string/lblNroComprabante"/>
+			
+			<TextView 
+			  		android:id="@+id/lblNumeroComprobanteValue" 
+				  	android:layout_width="wrap_content" 
+				  	android:layout_height="fill_parent"
+			  		android:text="@string/lblNroChequeDescripcionEj"
+			  		android:layout_marginLeft="5dp"
+			/>
+			
+	</LinearLayout>
+	
+	<LinearLayout
+			
+		  	android:orientation="horizontal"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content">
+		
+			<TextView 
+			  		android:id="@+id/lblFecha" 
+				  	android:layout_width="wrap_content" 
+				  	android:layout_height="fill_parent"
+				  	android:gravity="center_vertical"
+				  	android:textStyle="bold"
+			  		android:text="@string/lblFechaDeposito"
+			 />
+			
+			<TextView 
+			  		android:id="@+id/lblFechaValue" 
+				  	android:layout_width="wrap_content" 
+				  	android:layout_height="fill_parent"
+				android:layout_marginLeft="5dp"
+			  		android:text="@string/lblFechaHoraDescripcionEj"
+			/>
+			
+	</LinearLayout>
+	
+	    	<LinearLayout
+			
+		  	android:orientation="horizontal"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content">
+		
+			<TextView 
+			  		android:id="@+id/lblCantidadCheques" 
+				  	android:layout_width="wrap_content" 
+				  	android:layout_height="fill_parent"
+				  	android:gravity="center_vertical"
+				  	android:textStyle="bold"
+			  		android:text="@string/lblCantidadChequesLabel"
+			 />
+			
+			<TextView 
+			  		android:id="@+id/lblCantidadChequesValue" 
+				  	android:layout_width="wrap_content" 
+				  	android:layout_height="fill_parent"
+			  		android:text="@string/lblCero"
+					android:layout_marginLeft="5dp"/>
+			
+	</LinearLayout>
+	
+	<LinearLayout
+		  	android:orientation="horizontal"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="wrap_content"
+		  	android:gravity="right">
+		  	
+			  	<TextView	
+					android:id="@+id/lblTotal" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="18sp" 
+					android:textStyle="bold"
+					android:text="@string/lblTotal"
+				/>
+				
+				<TextView 
+					android:id="@+id/lblTotalValue"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content"
+					android:text="@string/lblCienDescripcion"
+					android:textSize="18sp" 
+					android:textStyle="bold"
+				android:layout_marginLeft="10dp"/>
+		</LinearLayout>
+    
+</LinearLayout>

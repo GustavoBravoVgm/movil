@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mni_agregar"
+        android:title="@string/tituloAgregar" />
+    <item
+        android:id="@+id/mni_objetivos_venta"
+        android:title="@string/tituloVerObjetivosVenta" />
+    <item
+        android:id="@+id/mni_config_busqueda"
+        android:title="@string/tituloConfigurarBusqueda" />
+    <item
+        android:id="@+id/mni_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/buscar"
+
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+</menu>

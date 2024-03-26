@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/lblSubtotal" />
+
+            <TextView
+                android:id="@+id/idSubtotal"
+                android:layout_width="wrap_content"
+                android:text="@string/lblCero"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblImpuestos"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="@string/lblPercDGR" />
+
+            <TextView
+                android:id="@+id/idPercDGR"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="@string/lblCero"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/lblDescuentoCabecera"
+                android:layout_width="wrap_content"
+                android:text="@string/lblIva" />
+
+            <TextView
+                android:id="@+id/idIva"
+                android:layout_width="wrap_content"
+                android:text="@string/lblCero"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="@string/lblPercDGI" />
+
+            <TextView
+                android:id="@+id/idPercDGI"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="@string/lblCero"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/lblExento" />
+
+            <TextView
+                android:id="@+id/idExento"
+                android:layout_width="wrap_content"
+                android:text="@string/lblCero"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="@string/lblImpInterno" />
+
+            <TextView
+                android:id="@+id/idImpInterno"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="@string/lblCero"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:stretchColumns="*">
+
+        <TextView
+            android:id="@+id/lblPedidoNoRentable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/lblPedidoNoRentable"
+            android:textColor="@color/orange"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/lblTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblTotal"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/idTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCero"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </TableLayout>
+
+</LinearLayout>
+	
+		
+	

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mni_ordenar_art"
+        android:enabled="true"
+        android:title="@string/mniOrdenar" />
+    <item
+        android:id="@+id/mni_configurar_busqueda_art"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_buscar"
+        android:title="@string/mniConfigurarBusqueda" />
+    <item
+        android:id="@+id/mni_objetivos_venta"
+        android:enabled="true"
+        android:title="@string/mniObjetivos" />
+    <item
+        android:id="@+id/mni_search_articulo"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/buscar"
+
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+</menu>

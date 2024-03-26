@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="btnAgregar">…</string>
+	<string name="btnAceptar">Aceptar</string>
+	<string name="btnVerDetalles">Ver Detalles</string>
+	<string name="btnCancelar">Cancelar</string>
+	<string name="btnCancelarPedido">Cancelar Pedido</string>
+	<string name="btnCancelarModificacionPedido">Cancelar Modificaciones</string>
+	<string name="btnVerCuentaCorriente">Ver cuenta corriente</string>
+	<string name="btnAutorizarPedido">Autorizar</string>
+	<string name="btnEnviar">Enviar</string>
+	<string name="btnDescargarImagen">Descargar imagenes</string>
+	<string name="btnDescargar">Descargar</string>
+	<string name="btnEliminarBD">Eliminar Base de Datos</string>
+	<string name="btnIngresar">Ingresar</string>
+</resources>

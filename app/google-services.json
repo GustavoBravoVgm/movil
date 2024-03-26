@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "524393188357",
+    "project_id": "ultra-gema",
+    "storage_bucket": "ultra-gema.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524393188357:android:17b332999a6c38d0",
+        "android_client_info": {
+          "package_name": "com.ar.vgmsistemas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524393188357-0f54c926561pjgo4nqsmnbs4gva326jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKK-h8ygeWLBQDZZDW4oCzW55zd0zksQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524393188357-0f54c926561pjgo4nqsmnbs4gva326jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

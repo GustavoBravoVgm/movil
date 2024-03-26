@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/lyt_separator" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblCanal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/lblCanal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblCanalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/lblNoAplicaDescripcionEj"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/lyt_separator" />
+
+    <ListView
+        android:id="@+id/lstObjetivoDetalle"
+        style="@style/listViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <include layout="@layout/lyt_objetivos_venta_footer" />
+
+</LinearLayout>

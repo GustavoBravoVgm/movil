@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tituloConfigurarBusquedaClientes">Buscar clientes según</string>
+    <string name="tituloSincronizar">Sincronizar</string>
+    <string name="tituloConfigurarAplicacion">Configurar Aplicacion</string>
+    <string name="tituloOrdenarArticulos">Ordenar artículos según</string>
+    <string name="tituloGuardarRecibo">Guardar</string>
+    <string name="tituloSeleccionarAccion">Seleccionar acción</string>
+    <string name="tituloAgregarLinea">Agregar línea</string>
+    <string name="tituloProbarConexion">Probar conexión</string>
+    <string name="tituloErrorGuardarPedido">Error al guardar pedido</string>
+    <string name="tituloError">Error</string>
+    <string name="tituloSeleccionarArticulo">Seleccionar artículo</string>
+    <string name="tituloSeleccionarFiltro">Seleccionar filtro</string>
+    <string name="tituloPagarMonto">Pagar monto</string>
+    <string name="tituloAutorizar">Autorizar</string>
+    <string name="tituloGuardarPedido">Guardar pedido</string>
+    <string name="tituloGuardarEgreso">Guardar egreso</string>
+    <string name="tituloCambiarLetraEgreso">Cambiar Letra de Egreso</string>
+    <string name="tituloGuardarPedidoModificado">Guardar modificaciones del pedido</string>
+    <string name="tituloErrorGps">GPS apagado</string>
+    <string name="tituloGuardarLocalizacionCliente">Guardar localizacion cliente</string>
+    <string name="tituloNoVigente">Fuera de vigencia</string>
+    <string name="tituloSeleccionarLista">Seleccionar lista</string>
+    <string name="tituloBultoUnidades">Escoja los bultos y/o unidades a devolver:</string>
+    <string name="tituloPegarSeleccionadas">Pagar Seleccionadas</string>
+    <string name="tituloSeleccionarTodo">Seleccionar todo</string>
+    <string name="tituloBorrarLineas">Borrar líneas</string>
+    <string name="tituloImprimirResumenCobranza">Imprimir Resumen Cobranza</string>
+    <string name="tituloBuscar">Buscar</string>
+    <string name="tituloVerVentasPorArticulo">Ver ventas por artículo</string>
+    <string name="tituloIrAOtraEmpresa">Ir a la otra empresa</string>
+    <string name="tituloFiltrar">Filtrar</string>
+    <string name="tituloRubro">Rubro</string>
+    <string name="tituloSubrubro">Subrubro</string>
+    <string name="tituloMarca">Marca</string>
+    <string name="tituloBorrarFiltros">Borrar Filtros</string>
+    <string name="tituloListaDePrecios">Lista de precios</string>
+    <string name="tituloAgregar">Agregar</string>
+    <string name="tituloGuardar">Guardar</string>
+    <string name="tituloBuscarPor">Buscar por</string>
+    <string name="tituloOrdenarPor">Ordenar por</string>
+    <string name="tituloActualizar">Actualizar</string>
+    <string name="tituloCriterioBusqueda">Criterio Búsqueda</string>
+    <string name="tituloFiltros">Filtros</string>
+    <string name="tituloCriterioOrdenamiento">Criterio Ordenamiento</string>
+    <string name="tituloCargarEgreso">Cargar Egreso</string>
+    <string name="tituloVerEgresos">Ver Egresos</string>
+    <string name="tituloResumenCobranza">Resumen Cobranza</string>
+    <string name="tituloVerEstadoConexion">Ver Estado de conexión</string>
+    <string name="tituloBuscarConexion">Buscar conexion</string>
+    <string name="tituloVerObjetivosVenta">Ver objetivos venta</string>
+    <string name="tituloConfigurarBusqueda">Configurar búsqueda</string>
+    <string name="tituloCategoria">Categoria</string>
+    <string name="tituloEstado">Estado</string>
+    <string name="tituloTipo">Tipo</string>
+
+    <string name="tituloGenerarAnticipo">Generación de anticipo</string>
+    <string name="tituloImprimirRecibo">No se pudo imprimir</string>
+    <string name="tituloNoSeGuardoRecibo">No se pudo guardar</string>
+    <string name="tituloConfirmar">Confirmación</string>
+    <string name="tituloBuscandoConexion">Buscando conexión</string>
+    <string name="tituloEliminacionBDExitosa">Base de datos eliminada</string>
+
+</resources>

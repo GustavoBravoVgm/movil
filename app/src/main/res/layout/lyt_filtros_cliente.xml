@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:padding="5dp"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/lytFiltro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/idLinearEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/lblEstadoLabel"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/RadioGroup01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbNoVisitados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/noVisitados" />
+
+                <RadioButton
+                    android:id="@+id/rbVisitados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visitados" />
+
+                <RadioButton
+                    android:id="@+id/rbTodos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/todos" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/mniFiltrarSucursal"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/cmbSucCliente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cdSucursalDelCliente"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/lblLocalidad"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/cmbLocalidad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cdIngreseLocalidad"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAceptar"
+                style="@style/btnAceptarNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAceptar" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="@style/btnCancelarNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnCancelar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

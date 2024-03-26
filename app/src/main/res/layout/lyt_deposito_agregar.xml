@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/lyt_cabecera_dlgs_entrega"
+
+        />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:padding="15dp"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblBanco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblBancoLabel"
+                android:textColor="@color/black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/acTxtBanco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hIngreseBanco"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/lblComprobante"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNumeroComprobanteLabel"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/txtNumeroComprobante"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hNumeroDepositoDescripcion"
+                android:maxLength="12"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/lblFechaDeposito"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblFechaDepositoLabel"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/txtFechaDeposito"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hFechaDepositoLabel"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/lblImporte"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblImporte"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/txtTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true"
+                android:text="@string/lblCero"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/lblCantidadCheques"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCantidadCheques"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtCantidadCheques"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="true"
+                android:text="@string/lblCero"
+                android:importantForAutofill="no" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAgregarDeposito"
+                    style="@style/btnAceptarNew"
+                    android:text="@string/btnAceptar" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    style="@style/btnCancelarNew"
+                    android:text="@string/btnCancelar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

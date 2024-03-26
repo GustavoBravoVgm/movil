@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:isScrollContainer="true"
+	android:padding="5dp"
+	android:background="@color/base_background_activity_color"
+	android:scrollbars="vertical">
+	
+	<LinearLayout 
+		
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		 
+	  	>
+
+		<TextView 
+			android:id="@+id/lblRazonSocial" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+		android:text="@string/lblRazonSocial"/>
+
+		<EditText
+			android:id="@+id/txtRazonSocial"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hRazonSocialDescripcion"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:inputType="textCapWords"
+			android:importantForAutofill="no" />
+
+		<TextView 
+			android:id="@+id/lblDomicilio"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/lblDomicilio"/>
+
+		<EditText
+			android:id="@+id/txtDomicilio"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hDomicilioComercioDescripcion"
+			android:inputType="textCapWords"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:importantForAutofill="no"  />
+		
+		<TextView 
+			android:id="@+id/lblLocalidad"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/lblLocalidad"/>
+
+		<EditText
+			android:id="@+id/txtLocalidad"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hLocalidadComercioDescripcion"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:inputType="textCapWords"
+			android:importantForAutofill="no"  />
+		
+		<TextView 
+			android:id="@+id/lblTelefono"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"			
+		android:text="@string/lblTelefono"/>
+
+		<EditText
+			android:id="@+id/txtTelefono"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hTelefonoComercioDescripcion"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:inputType="textCapWords"
+			android:importantForAutofill="no"  />
+		
+		<TextView
+			android:id="@+id/lblCuit" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+		android:text="@string/lblCuit"/>
+
+		<EditText
+			android:id="@+id/txtCuit"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hCuitClienteDescripcion"
+			android:inputType="number"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:importantForAutofill="no" />
+
+		<TextView 
+			android:id="@+id/lblCategoriaFiscal"
+			android:text="@string/categoriaFiscal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		/>
+
+		<EditText
+			android:id="@+id/txtCategoriaFiscal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hCategoriaFiscalDescripcion"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:inputType="textCapWords"
+			android:importantForAutofill="no"  />
+
+		<TextView
+			android:id="@+id/lblCondicionVenta"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+		android:text="@string/lblCondicionVenta"/>
+
+		<EditText
+			android:id="@+id/txtCondicionVenta"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hCondicionVentaDescripcion"
+			android:minHeight="48dp"
+			android:textColorHint="#757575"
+			android:inputType="textCapWords"
+			android:importantForAutofill="no" />
+		
+	</LinearLayout>
+</ScrollView>

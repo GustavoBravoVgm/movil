@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHostVenta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/lytIncludeVenta"
+        layout="@layout/lyt_venta_totales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerVenta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/lytIncludeVenta"
+        android:layout_below="@id/tabLayoutVenta"
+        android:padding="5dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/cdConfiguracionAvanzada" />
+
+</RelativeLayout>

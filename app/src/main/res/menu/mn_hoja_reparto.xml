@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miSearch"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/tituloBuscar"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/miCriterio"
+        android:title="@string/tituloCriterioBusqueda" />
+    <item
+        android:id="@+id/miFiltros"
+        android:title="@string/tituloFiltros" />
+    <item
+        android:id="@+id/miOrden"
+        android:title="@string/tituloCriterioOrdenamiento" />
+    <item
+        android:id="@+id/miCargarEgreso"
+        android:title="@string/tituloCargarEgreso" />
+    <item
+        android:id="@+id/miVerEgresos"
+        android:title="@string/tituloVerEgresos" />
+
+
+</menu>

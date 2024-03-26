@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mni_filtrar"
+        android:title="@string/tituloFiltrar">
+        <menu>
+            <item
+                android:id="@+id/mni_rubro"
+                android:title="@string/tituloRubro" />
+            <item
+                android:id="@+id/mni_subrubro"
+                android:title="@string/tituloSubrubro" />
+            <item
+                android:id="@+id/mni_marca"
+                android:title="@string/tituloMarca" />
+            <item
+                android:id="@+id/mni_reset_filtros"
+                android:title="@string/tituloBorrarFiltros" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mni_listasCatalogo"
+        android:title="@string/tituloListaDePrecios"/>
+    <item
+        android:id="@+id/mni_search_articulo_catalogo"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="0"
+        android:title="@string/buscar"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

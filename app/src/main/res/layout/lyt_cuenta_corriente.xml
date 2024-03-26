@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+    <TextView
+      android:id="@+id/lblCliente"
+	  android:text="@string/lblClienteMnPrincipal"
+	  android:layout_height="wrap_content"
+	  android:layout_width="fill_parent"
+	  android:layout_marginLeft="5dp"
+	  android:textAppearance="?android:attr/textAppearanceMedium"
+	  android:textStyle="bold"
+    />
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+          android:id="@+id/lblLimiteCredito2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/lblLimiteCredito2"
+          android:layout_weight="1"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+        <TextView
+            android:id="@+id/lblCredUtilizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblCredUtilizado"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/lblCredDisponible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblCredDisponible"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/lblLimiteCreditoValue"
+			android:text="@string/lblCero"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			/>
+        <TextView
+            android:id="@+id/lblCreditoUtilizadoValue"
+            android:text="@string/lblCero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/lblCreditoDisponibleValue"
+            android:text="@string/lblCero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+	</LinearLayout>
+
+	<View
+  	android:layout_width="fill_parent"
+  	android:layout_height="2dip"
+  	android:background="#FF909090"/>
+
+    <ListView
+  	android:id="@+id/lstDetalles"
+  	android:layout_width="fill_parent"
+  	android:layout_height="0dp"
+  	style="@style/listViewStyle"
+  	android:layout_weight="1"/>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:background="#FF909090"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/lblTotalSelect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/lblTotalSelect"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView
+			android:id="@+id/lblTotalSelectValue"
+			android:text="@string/lblCero"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textStyle="bold"/>
+	</LinearLayout>
+
+  	<View
+  	android:layout_width="fill_parent"
+  	android:layout_height="2dip"
+  	android:background="#FF909090"/>
+
+  	<LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:orientation="horizontal">
+
+		  <TextView
+		  	android:id="@+id/lblSaldoVencido"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:text="@string/lblSaldoVencido"
+		  	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		  <TextView
+		  	android:id="@+id/lblSaldoVencidoValue"
+		  	android:text="@string/lblCero"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textStyle="bold"/>
+  	</LinearLayout>
+
+	<LinearLayout
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:orientation="horizontal">
+
+	  <TextView
+	  	android:id="@+id/lblSaldoTotal"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:text="@string/lblSaldoTotal"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"  />
+
+	  <TextView
+	  	android:id="@+id/lblSaldoTotalValue"
+	  	android:text="@string/lblCero"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textStyle="bold"/>
+	</LinearLayout>
+</LinearLayout>

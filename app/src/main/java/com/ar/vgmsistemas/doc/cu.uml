@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Jo6rMOzJEd-bWrzxnCpcVQ" name="cu">
+  <elementImport xmi:id="_JqQINOzJEd-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_JqQINezJEd-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_JqQINuzJEd-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_JqQIN-zJEd-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Tay08OzJEd-bWrzxnCpcVQ" name="vendedor"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VlLB0OzJEd-bWrzxnCpcVQ" name="Login"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XdhDgOzJEd-bWrzxnCpcVQ" memberEnd="_Xdq0gOzJEd-bWrzxnCpcVQ _Xdq0g-zJEd-bWrzxnCpcVQ" navigableOwnedEnd="_Xdq0g-zJEd-bWrzxnCpcVQ">
+    <ownedEnd xmi:id="_Xdq0gOzJEd-bWrzxnCpcVQ" name="src" type="_Tay08OzJEd-bWrzxnCpcVQ" association="_XdhDgOzJEd-bWrzxnCpcVQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xdq0guzJEd-bWrzxnCpcVQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xdq0gezJEd-bWrzxnCpcVQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_Xdq0g-zJEd-bWrzxnCpcVQ" name="dst" type="_VlLB0OzJEd-bWrzxnCpcVQ" association="_XdhDgOzJEd-bWrzxnCpcVQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xdq0hezJEd-bWrzxnCpcVQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xdq0hOzJEd-bWrzxnCpcVQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZtaCgOzJEd-bWrzxnCpcVQ" name="Buscar Pedido"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Fjc1MOzKEd-bWrzxnCpcVQ" name="Ver Detalles cliente"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_OLdM0OzKEd-bWrzxnCpcVQ" name="Consultar Cuenta Corriente"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XKinsOzKEd-bWrzxnCpcVQ" name="Generar Pedido"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eh0XQOzKEd-bWrzxnCpcVQ" name="Consultar Ventas"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2c8eMOzLEd-bWrzxnCpcVQ" name="Modificar Pedido"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4UG0IOzLEd-bWrzxnCpcVQ" name="Borrar Pedido"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5iTsoOzLEd-bWrzxnCpcVQ" name="Ver Detalles Pedido"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-rVb8OzLEd-bWrzxnCpcVQ" name="Buscar Producto"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Jm0nMOzOEd-bWrzxnCpcVQ" name="Registrar No Pedido"/>
+</uml:Model>

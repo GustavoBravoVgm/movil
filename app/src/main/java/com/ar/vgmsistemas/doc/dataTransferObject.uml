@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_RW_k8et7Ed-bWrzxnCpcVQ" name="dataTransferObject">
+  <elementImport xmi:id="_RZOZkOt7Ed-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_RZYKkOt7Ed-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_RZYKket7Ed-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_RZYKkut7Ed-bWrzxnCpcVQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YIwMoOt7Ed-bWrzxnCpcVQ" name="Cliente">
+    <ownedAttribute xmi:id="_cYzFgOt7Ed-bWrzxnCpcVQ" name="idSucursal" aggregation="composite"/>
+  </packagedElement>
+</uml:Package>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mni_generar_anticipo"
+        android:title="@string/mniGenerarAN" />
+
+    <item
+        android:id="@+id/mni_pagar_todas"
+        android:title="@string/mniPagarTodas" />
+    <item
+        android:id="@+id/mni_pagar_monto"
+        android:title="@string/mniPagarMonto" />
+    <item
+        android:id="@+id/mni_ver_cheques"
+        android:title="@string/mniVerCheques" />
+
+</menu>

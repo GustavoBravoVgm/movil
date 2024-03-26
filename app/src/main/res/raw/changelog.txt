@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type='text/css'>
+      a            { color:#000000 }
+      #cuerpo
+      {
+      	background-color: #000000;
+      }
+      div.title    { 
+          color:#000000; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#000000; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#000000 }
+      div.list     { color:#000000 }
+    </style>
+  </head>
+  <body>
+<div id="cuerpo">
+$ 3.69
+  % Version 3.69
+	_MEJORAS
+    * Filtrar productos de los proveedores asignados a vendedores y comercios.
+
+    _CORRECCIONES
+    *
+  $ END_OF_CHANGE_LOG
+</div>
+  </body>
+</html>

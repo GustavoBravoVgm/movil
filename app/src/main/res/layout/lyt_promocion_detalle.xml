@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/lblPrecioCombo"
+                    android:text="@string/lblPrecioPromocion"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/lblPrecioComboValue"
+                    android:text="@string/lblCero"
+                    android:paddingRight="30sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/lblPrecioNormal"
+                    android:text="@string/lblPrecioNormal"/>
+
+                <TextView
+                    android:text="@string/lblCero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/lblPrecioNormalValue"
+                    android:paddingRight="30sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/lblImpInterno"
+                    android:id="@+id/lblImpInterno"/>
+
+                <TextView
+                    android:text="@string/lblCero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/lblImpInternoValue"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="@string/lblPorcentajeAhorro"
+                        android:id="@+id/lblPorcentajeAhorro"/>
+
+                    <TextView
+                        android:text="@string/lblCero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:id="@+id/lblPorcentajeAhorroValue"
+                        android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/lyt_separator"/>
+
+                <ListView
+                    android:id="@+id/lstDetalleCombo"
+                    style="@style/listViewStyle"
+                    android:layout_height="0dip"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+</LinearLayout>

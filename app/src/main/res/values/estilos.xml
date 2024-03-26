@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="btnAceptarNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:insetLeft">15dp</item>
+        <item name="android:insetRight">15dp</item>
+        <item name="android:backgroundTint">@color/grey_dark</item>
+    </style>
+
+    <style name="btnCancelarNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:insetLeft">15dp</item>
+        <item name="android:insetRight">15dp</item>
+        <item name="android:backgroundTint">@color/grey_dark</item>
+    </style>
+
+    <style name="textoGrande" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="listViewStyle">
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@color/background_gray</item>
+    </style>
+    <!--<style name="MyTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="MyTheme" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/TextViewActionBarStyle</item>
+        <item name="android:background">@color/action_bar</item>
+        <item name="background">@color/action_bar</item>
+    </style>
+
+    <style name="TextViewActionBarStyle" parent="@android:style/TextAppearance.Medium" />
+
+    <style name="ProgressStyle" parent="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    <style name="textViewSincronizacionLabels">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="textViewSincronizacionValues">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">15dp</item>
+
+    </style>
+
+    <style name="EtEstadoConexion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/grisApagado</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:background">@drawable/rounded_background</item>-->
+    </style>
+</resources>

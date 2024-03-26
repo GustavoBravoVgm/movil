@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayoutDtoEmpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayoutDtoProv"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="@string/lblDescuentoEmpresaDescripcion"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/action_bar"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TextView_serial"
+                android:gravity="center"
+                android:text="@string/lblDesdeDescripcionEJ"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/TextView_item_name"
+                android:gravity="center"
+                android:text="@string/lblHastaDescripcionEj"
+                android:textColor="#FFFFFF"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/TextView_quantity_no"
+                android:gravity="center"
+                android:text="@string/lblTasaDescuentoDescripcionEj"
+                android:textColor="#FFFFFF"
+                android:typeface="serif" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/lstPromoEmpresa"
+            style="@style/listViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutDtoProv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow_Title_DtoProv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewDtoProv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="@string/lblDescuentosProveedorDescripcionEj"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow_SubtitleDtoProv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/action_bar"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/TextView_DesdeDtoProv"
+                android:gravity="center"
+                android:text="@string/lblDesdeDescripcionEJ"
+                android:textColor="#FFFFFF"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/TextView_HastaDtoProv"
+                android:gravity="center"
+                android:text="@string/lblHastaDescripcionEj"
+                android:textColor="#FFFFFF"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/TextView_TasaDtoProv"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/lblTasaDescuentoDescripcionEj"
+                android:textColor="#FFFFFF"
+                android:typeface="serif" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/lstPromoProveedor"
+            style="@style/listViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/base_background_activity_color" />
+    </TableLayout>
+</RelativeLayout>

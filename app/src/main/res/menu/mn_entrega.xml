@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mni_agregar_cheque"
+        android:title="@string/agregar_cheque" />
+    <item
+        android:id="@+id/mni_egresos"
+        android:title="@string/mnEgresos" />
+    <item
+        android:id="@+id/mni_vales"
+        android:title="@string/mnVales" />
+</menu>

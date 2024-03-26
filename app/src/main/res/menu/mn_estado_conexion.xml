@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemActualizar"
+        android:icon="@drawable/ic_menu_sincronizar"
+        android:title="@string/tituloActualizar" />
+    <item
+        android:id="@+id/itemActualizarConfConex"
+        android:icon="@drawable/ic_menu_sincronizar"
+        android:title="@string/lblActualizConfConex" />
+</menu>

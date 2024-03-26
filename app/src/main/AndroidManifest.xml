@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="36900000"
+    android:versionName="3.69">
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    -->
+    <!-- Permisos para uso de registro de ubicacion -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" /> <!-- <uses-permission android:name="android.permission.GET_TASKS" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <!--android:theme="@style/MyTheme"-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon_newtransp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon_newtransp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UltraGemaV2"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+        <activity
+            android:name="com.ar.vgmsistemas.view.FrmLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <!-- Eliminar la linea android:usesCleartextTraffic="true",porque hay que empezar a usar encriptado el trafico -->
+        <!--         </activity> -->
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6fd62818eff2cfc1ed9184c9de1bc45f59c8b168" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDmFlz0qwhygKNJuUAo5Fj7gN_BhU26E08" />
+
+        <activity
+            android:name="com.ar.vgmsistemas.view.VgmInicioActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.UltraGemaV2.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>        <!--android:screenOrientation="portrait"-->
+        <activity
+            android:name="com.ar.vgmsistemas.view.venta.FrmVenta"
+            android:configChanges="orientation" />
+        <activity android:name="com.ar.vgmsistemas.view.nopedido.FrmGestionNoPedido" />
+        <activity android:name="com.ar.vgmsistemas.view.articulo.DlgBldrCombo" />
+        <activity android:name="com.ar.vgmsistemas.view.sincronizacion.FrmReenvioPedidos" />
+        <activity android:name="com.ar.vgmsistemas.view.configuracion.FrmMenuConfiguracion" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.venta.FrmAgregarLinea"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.informes.FrmVentasXArticulo"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.FrmCuentaCorriente"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.FrmRecibo"
+            android:configChanges="orientation" />
+        <activity android:name="com.ar.vgmsistemas.view.cobranza.FrmPagos" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.cheque.FrmGestionCheques"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.cheque.FrmAgregarCheque"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.pagoEfectivo.FrmAgregarPagoEfectivo"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.pagoEfectivo.FrmGestionPagosEfectivo"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.retencion.FrmGestionRetencion"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.retencion.FrmAgregarRetencion"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.FrmResumenCuentaCorriente"
+            android:configChanges="orientation"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.articulo.FrmPreciosXLista"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.reparto.hojas.detalles.FrmDetalleFacturaReparto"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.reparto.hojas.detalles.Multiples.FrmDetallesFacturasReparto"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.rendicion.egresos.FrmEgreso"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.reparto.hojas.FrmListadoEgresos"
+            android:configChanges="orientation" />
+
+        <service android:name="com.ar.vgmsistemas.utils.TaskManager" />
+        <service android:name="com.ar.vgmsistemas.gps.GPSService" />
+
+        <receiver
+            android:name="com.ar.vgmsistemas.utils.UsbReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.UMS_CONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.ar.vgmsistemas.gps.AuditoriaGpsBroadCastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ar.vgmsistemas.view.cobranza.deposito.FrmAgregarDeposito"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name="com.ar.vgmsistemas.view.cobranza.deposito.FrmGestionDeposito" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.objetivoVenta.FrmGestionObjetivoVenta"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ar.vgmsistemas.view.FrmCoordenadasCliente" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.reparto.FrmMenuReparto"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.menu.NavigationMenu"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ar.vgmsistemas.view.configuracion.FrmConfiguracionesAvanzadasTab"
+            android:configChanges="orientation" />
+
+        <service android:name="com.ar.vgmsistemas.ws.vendedor.StateVendedorService" />
+
+        <activity android:name=".view.venta.FrmAgregarLineaHacienda" />
+        <activity android:name=".view.venta.catalogo.CatalogoActivity" />
+    </application>
+
+</manifest>

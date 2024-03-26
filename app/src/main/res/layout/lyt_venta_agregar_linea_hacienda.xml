@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ScrollView"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:isScrollContainer="true"
+	android:scrollbars="vertical">
+
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:minWidth="300dp" 
+	  	android:minHeight="400dp" 
+	  	android:paddingRight="10dp" 
+	  	android:paddingLeft="10dp">
+		
+		<include layout="@layout/lyt_agregar_linea_base"/>
+		
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_marginTop="5dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					android:id="@+id/lblNroTropa" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal"
+					android:text="@string/lblNroTropa"/>
+
+			<EditText
+				android:id="@+id/txtNroTropa"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:hint="@string/hNumeroTropa"
+				android:importantForAutofill="no"
+				android:inputType="number"
+				android:minHeight="48dp"
+				android:textColorHint="#757575" />
+
+			</LinearLayout>		
+		
+			
+		<TableLayout			
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="*">
+			<TableRow >
+			
+			
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					android:id="@+id/lblKg" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="@string/lblKgPorPieza"/>
+
+				<EditText
+					android:id="@+id/txtKg"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:importantForAutofill="no"
+					android:inputType="numberDecimal"
+					android:minHeight="48dp"
+					android:selectAllOnFocus="true"
+					android:text="@string/lblCero"
+					tools:ignore="DuplicateSpeakableTextCheck" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					android:id="@+id/lblUnidades" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="@string/lblMediasReses"/>
+
+				<EditText
+					android:id="@+id/txtUnidades"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:inputType="number"
+					android:minHeight="48dp"
+					android:selectAllOnFocus="true"
+					android:text="@string/lblCero"
+					android:importantForAutofill="no" />
+			</LinearLayout>
+			
+					
+		</TableRow>	
+	</TableLayout>
+	
+	<TableLayout			
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="*">
+			<TableRow>
+					
+			
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dip"
+				android:layout_weight="0.25"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					android:id="@+id/lblPrecioKilo" 
+					android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:text="@string/lblPrecioKilo"
+					android:enabled="false"/>
+
+				<EditText
+					android:id="@+id/txtPrecioKilo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:enabled="false"
+					android:hint="@string/hMontoEj"
+					android:inputType="numberDecimal"
+					android:minHeight="48dp"
+					android:importantForAutofill="no" />
+
+			</LinearLayout>	
+			
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="0dip"
+				android:layout_weight="0.5"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					android:id="@+id/lblSubtotal" 
+					android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:text="@string/lblSubtotal"/>
+
+				<EditText
+					android:id="@+id/txtSubtotal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:inputType="none"
+					android:minHeight="48dp"
+					android:text="@string/lblCeroPrEj"
+					android:importantForAutofill="no" />
+
+			</LinearLayout>			
+				
+		</TableRow>	
+	</TableLayout>	
+	
+	
+	<LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_marginTop="5dp"
+		android:layout_height="wrap_content" 
+		android:gravity="center">
+		<Button
+			android:id="@+id/btnAgregarLinea"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/btnAceptar"
+			style="@style/btnAceptarNew"
+		/>
+					
+		<Button 
+			android:id="@+id/btnCancelar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/btnCancelar"
+			style="@style/btnCancelarNew"
+		/>
+	</LinearLayout>
+	</LinearLayout>
+</ScrollView>
