@@ -552,6 +552,10 @@
     <string name="lblNoAtencionesCabecera">NO ATENCIONES</string>
     <string name="lblUbicGeoCabecera">UBICACIONES MODIFICADAS DE CLIENTES</string>
     <string name="lblEgresosCabecera">EGRESOS</string>
+    <string name="permission_required">Permiso requerido</string>
+    <string name="call_permission">Es necesario activar el permiso de llamadas</string>
+    <string name="location_permission">Es necesario activar el permiso de ubicación.</string>
+    <string name="permission_required_desc">Es necesario activar todos los permisos requeridos.</string>
     <!--Layout con problemas
     lyt_detalle_factura_reparto
     lyt_hojas

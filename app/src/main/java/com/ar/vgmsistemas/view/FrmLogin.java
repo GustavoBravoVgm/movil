@@ -91,8 +91,10 @@ import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
@@ -272,16 +274,49 @@ public class FrmLogin extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_EXTERNAL_STORAGE,
                 Manifest.permission.CALL_PHONE};
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            permisos = new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.READ_MEDIA_VIDEO,
+                    Manifest.permission.READ_MEDIA_IMAGES,
+                    Manifest.permission.CALL_PHONE};
+        }
                 /*Manifest.permission.BLUETOOTH,Manifest.permission.READ_PHONE_STATE,
                 Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.INTERNET,
                 Manifest.permission.WRITE_SETTINGS*/
         //verifico si los permisos estan concedidos
-        if (!PermissionManager.checkPermission(this, permisos)) {
-            do {
-                ActivityCompat.requestPermissions(this, permisos, REQUEST_CODE_ALL_PERMISSION);
-            } while (!PermissionManager.checkPermission(this, permisos));
+        List<String> permisosAPedir = new ArrayList<String>();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            for (String permiso : permisos) {
+                if (shouldShowRequestPermissionRationale(permiso)) {
+                    SimpleDialogFragment.newInstance(SimpleDialogFragment.TYPE_OK, getString(R.string.permission_required_desc), getString(R.string.permission_required), (SimpleDialogFragment.OkListener) () -> {
+                        sendUserToSettings();
+                    }).show(getSupportFragmentManager(), "tag");
+                } else {
+                    permisosAPedir.add(permiso);
+                }
+            }
+            String[] permisosAPedirArray = new String[permisosAPedir.size()];
+            permisosAPedirArray = permisosAPedir.toArray(permisosAPedirArray);
+            ActivityCompat.requestPermissions(this, permisosAPedirArray, REQUEST_CODE_ALL_PERMISSION);
+
+        } else {
+            if (!PermissionManager.checkPermission(this, permisos)) {
+                do {
+                    ActivityCompat.requestPermissions(this, permisos, REQUEST_CODE_ALL_PERMISSION);
+                } while (!PermissionManager.checkPermission(this, permisos));
+            }
         }
+
+
         return true;
+    }
+
+    private void sendUserToSettings() {
+        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        Uri uri = Uri.fromParts("package", getPackageName(), null);
+        intent.setData(uri);
+        startActivity(intent);
     }
 
     @Override
@@ -297,7 +332,7 @@ public class FrmLogin extends AppCompatActivity {
                 iniciar();
             } else {
                 // El usuario denegó el permiso, muestra un mensaje de que la operación no puede realizarse sin permiso
-                mostrarMensajePermisosNecesarios();
+                txtUsuario.post(this::mostrarMensajePermisosNecesarios);
             }
         }
     }
@@ -306,10 +341,13 @@ public class FrmLogin extends AppCompatActivity {
         String tituloMsj = "Permisos Necesarios";
         String mensaje = "No has concedido todos los permisos necesarios para utilizar todas las " +
                 "funciones de esta aplicación.";
-        AlertDialog builder = new AlertDialog(getApplicationContext(), tituloMsj, mensaje);
-        builder.setPositiveButton("Entendido", (dialogInterface, i) -> {
+        AlertDialog builder = new AlertDialog(this, tituloMsj, mensaje);
+        builder.setPositiveButton("Cerrar app", (dialogInterface, i) -> {
             // Cerrar la aplicación o realizar otras acciones según tus necesidades
             finish();
+        });
+        builder.setNegativeButton("Ir a configs", (dialogInterface, i) -> {
+            sendUserToSettings();
         });
         builder.show();
     }
